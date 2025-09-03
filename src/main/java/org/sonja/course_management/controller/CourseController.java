@@ -26,7 +26,6 @@ public class CourseController {
         CourseRequestAndResponse newCourse = courseService.createCourse(courseRequestAndResponse);
 
         return ResponseEntity.created(URI.create("/courses")).body(newCourse);
-
     }
 
     @GetMapping("/courses/all")
@@ -52,8 +51,8 @@ public class CourseController {
 
     @DeleteMapping(value = "courses/{numberCourse}/delete", produces = "application/json")
     public ResponseEntity<SuccessResponse> deleteCourse(@PathVariable int numberCourse) {
-
         SuccessResponse successResponse = courseService.deleteCourse(numberCourse);
+
         return ResponseEntity.ok(successResponse);
     }
 }
