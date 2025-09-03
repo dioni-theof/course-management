@@ -70,7 +70,7 @@ course-management/
 │   │   ├── java/org/sonja/course_management/
 │   │   │   ├── controller/         # REST API endpoints
 │   │   │   ├── entities/           # JPA entities
-│   │   │   ├── exeptions/          # Custom exceptions
+│   │   │   ├── exeptions/          # Handle exceptions & Custom exceptions
 │   │   │   ├── mapping/            # Object mapping utilities
 │   │   │   ├── models/            # Data transfer objects
 │   │   │   ├── repo/              # Data repositories
