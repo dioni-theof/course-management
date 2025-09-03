@@ -47,11 +47,29 @@ The application will be available at `http://localhost:8080`
 
 ```
 course-management/
-├── src/                    # Source files
-├── .mvn/                   # Maven wrapper files
-├── docker-compose.yml      # Docker compose configuration
-├── pom.xml                 # Maven dependencies
-└── https/                  # HTTPS configuration
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── coursemanagement/
+│   │   │           ├── config/         # Configuration classes
+│   │   │           ├── controller/     # REST controllers
+│   │   │           ├── model/         # Domain models
+│   │   │           ├── repository/    # Data access layer
+│   │   │           ├── service/       # Business logic
+│   │   │           ├── exception/     # Custom exceptions
+│   │   │           └── dto/          # Data Transfer Objects
+│   │   └── resources/
+│   │       ├── application.properties  # Application configuration
+│   │       ├── static/               # Static resources
+│   │       └── templates/            # Template files
+│   └── test/                        # Test files
+│       └── java/
+├── .mvn/                           # Maven wrapper files
+├── docker-compose.yml              # Docker compose configuration
+├── pom.xml                        # Maven dependencies and build configuration
+├── .gitignore                     # Git ignore file
+└── https/                         # HTTPS configuration
 ```
 
 ## 🚀 Usage
@@ -69,9 +87,3 @@ After starting the application, you can access the API endpoints to manage cours
 ## 📝 License
 
 This project is currently not under any specific license. All rights reserved.
-
-## 📞 Contact
-
-Dionisis Theofanous - [@dioni-theof](https://github.com/dioni-theof)
-
-Project Link: [https://github.com/dioni-theof/course-management](https://github.com/dioni-theof/course-management)
