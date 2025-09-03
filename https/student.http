@@ -1,0 +1,63 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST http://localhost:8080/api/students
+Content-Type: application/json
+
+{
+  "name": "Adder",
+  "surname": "Add",
+  "birthday": "1990",
+  "email": "sotheof@gmail.com"
+}
+
+
+###
+DELETE http://localhost:8080/api/students/sotheof@gmail.com/delete-student
+
+####
+PUT http://localhost:8080/api/students/sotheof@gmail.com/update-student
+Content-Type: application/json
+
+{
+  "infoCourses": [
+    {
+      "numberCourse": 17,
+      "semester": 10
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/api/courses
+Content-Type: application/json
+
+{
+  "numberCourse": 17,
+  "nameCourse": "pagts"
+}
+
+###
+GET http://localhost:8080/api/courses/all?size=1&page=10
+
+
+
+###
+GET http://localhost:8080/api/students/sotheof@gmail.com/all-course
+
+###
+GET http://localhost:8080/api/courses/9/findbynumber
+
+###
+PUT http://localhost:8080/api/courses/1/update
+Content-Type: application/json
+
+{
+  "nameCourse": "Math"
+}
+
+###
+DELETE http://localhost:8080/api/courses/16/delete
+
